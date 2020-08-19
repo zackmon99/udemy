@@ -9,7 +9,7 @@ bool match(string test) {
 	return test.size() == 3;
 }
 
-int countStrings(vector<string>& texts, bool (*match)(string test)) {
+int countStrings(vector<string>& texts, bool (*match)(string)) {
 	int count = 0;
 	for (vector<string>::iterator i = texts.begin(); i != texts.end(); i++)
 	{
